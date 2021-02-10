@@ -2,12 +2,6 @@ import random
 import sys
 import math
 
-def gauss_2d(mu_x, sigma_x, mu_y, sigma_y):
-    x = random.gauss(mu_x, sigma_x)
-    y = random.gauss(mu_y, sigma_y)
-    return (x, y)
-
-
 if __name__ == "__main__":
     assert (len(sys.argv) - 2) == 4 # without script name and points count
     random.seed(42)
